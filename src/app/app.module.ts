@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProductsModule } from './components/products/products.module';
 import { MatCardModule } from '@angular/material/card';
 import { PaymentComponent } from './payment/payment.component';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PaymentComponent } from './payment/payment.component';
     BrowserModule,
     AppRoutingModule,
     ProductsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

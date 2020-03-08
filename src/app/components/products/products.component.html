@@ -4,7 +4,7 @@
     <!-- <mat-grid-tile-header>
     </mat-grid-tile-header> -->
 
-    <img mat-card-image src={{prod.path}} class="avira-image">
+    <img mat-card-image src={{prod.path}} class="avira-image" (onclick)="router.navigate(['/payment']);">
     <mat-list>
       <mat-list-item style="height: 150px;">
         <p>{{prod.description}}</p>
