@@ -1,2 +1,0 @@
-# hackitall
-Preliminara
