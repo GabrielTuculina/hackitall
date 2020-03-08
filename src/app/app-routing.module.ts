@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
-  { path: 'select-products', component: ProductsComponent }
+  { path: 'select-products', component: ProductsComponent },
+  { path: 'payment', component: PaymentComponent }
 ];
 
 @NgModule({
