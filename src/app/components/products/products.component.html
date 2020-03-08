@@ -1,0 +1,27 @@
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let prod of products">
+
+    <!-- <mat-grid-tile-header>
+    </mat-grid-tile-header> -->
+
+    <img mat-card-image src={{prod.path}} class="avira-image">
+    <mat-list>
+      <mat-list-item>
+        {{prod.description}}
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <mat-list-item>
+        {{prod.price}}
+      </mat-list-item>
+    </mat-list>
+    
+    <mat-grid-tile-footer>
+        {{prod.quantity}}
+      <!-- <mat-icon svgIcon="plus" aria-hidden="false"></mat-icon> -->
+    </mat-grid-tile-footer>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
