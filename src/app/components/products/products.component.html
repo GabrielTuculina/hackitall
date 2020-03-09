@@ -26,9 +26,19 @@
 
   </mat-grid-tile>
 </mat-grid-list>
-<button (click)="checkAdmin()" mat-raised-button color="#0a7800">Cash</button>
+<br/>
+<br/>
+<div class="example-button-row">
+  <button mat-raised-button (click)="showInput()">ADMINISTRARE</button>
+</div>
+
 <div class="example-container">
-  <mat-form-field appearance="fill">
-    <input matInput required maxlength="4" type="password" placeholder="PIN">
+  <mat-form-field appearance="fill"  *ngIf="this.isInputVisible" (submit)="onSubmit()">
+    <input matInput required maxlength="4" type="password" placeholder="PIN"  formControl="pin" 
+    (change)="checkAdmin()">
+    <div class="example-button-row">
+      <button mat-raised-button (click)="onSubmit()">Verifica</button>
+    </div>
   </mat-form-field>
+  <button *ngIf="this.isAdmin">Heei</button>
 </div>

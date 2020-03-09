@@ -12,8 +12,10 @@
   height: 300px;
   width: auto;
 }
-.mat-raised-button{
+.example-button-row button,
+.example-button-row a {
   margin: 8px;
   background: #0a7800;
   color: white;
+  font-size: 20px;
 }

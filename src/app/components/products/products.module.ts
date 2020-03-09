@@ -9,6 +9,7 @@ import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import {MatInputModule} from '@angular/material/input';
     MatListModule,
     RouterModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   declarations: [ProductsComponent]
 })

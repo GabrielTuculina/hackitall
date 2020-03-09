@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-products',
@@ -8,6 +9,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  isInputVisible:boolean;
+  pin;
+  isAdmin;
   products: Product[] = [
     { title: "Avira Prime", description: "Detects malware & online threats in real time.\nAnonymizes & encrypts your web browsing.\nSpeeds up your computers & mobile phones.\nGenerates & remembers passwords for you.",
      price: "319 lei", path: "../../../assets/avira-prime.jpeg", quantity: 8},
@@ -25,9 +29,24 @@ export class ProductsComponent implements OnInit {
   constructor(private route: ActivatedRoute,private router: RouterModule) { }
 
   ngOnInit() {
+    this.isInputVisible = false;
+    this.pin = new FormControl();
+    this.isAdmin = false;
   }
+  showInput(){
+    this.isInputVisible = true;
+  }
+  
   checkAdmin(){
-    
+    if (this.pin.value > 999){
+      if (this.pin.value == '1562'){
+        this.isAdmin = true;
+        console.log(this.pin.value);
+      }
+    } 
+  }
+  onSubmit(){
+    console.log(this.pin.value);
   }
 
 }
