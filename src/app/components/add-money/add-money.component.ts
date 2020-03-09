@@ -22,7 +22,7 @@ export class AddMoneyComponent implements OnInit {
   ngOnInit() {
   }
   showMessage(){
-    this.finalTr = "Multumim pentru tranzactie!";
+    this.finalTr = "Thank you for your purchase!";
     this.message = "";
     this.isButtonVisible = false;
   }
