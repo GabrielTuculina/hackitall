@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+.example-button-row{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.mat-raised-button{
+  margin: 8px;
+  background: #0a7800;
+  color: white;
+}

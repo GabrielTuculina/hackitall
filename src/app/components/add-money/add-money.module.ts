@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsComponent } from './products.component';
+import { AddMoneyComponent } from './add-money.component';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -18,11 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatGridListModule,
     MatIconModule,
     MatListModule,
-    RouterModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule
+    RouterModule
   ],
-  declarations: [ProductsComponent]
+  declarations: [AddMoneyComponent]
 })
 export class ProductsModule { }

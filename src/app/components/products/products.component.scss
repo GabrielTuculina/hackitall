@@ -7,13 +7,15 @@
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
-// .mat-grid-tile .mat-grid-tile-footer>*{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
 
 .avira-image {
   height: 300px;
   width: auto;
+}
+.example-button-row button,
+.example-button-row a {
+  margin: 8px;
+  background: #0a7800;
+  color: white;
+  font-size: 20px;
 }
