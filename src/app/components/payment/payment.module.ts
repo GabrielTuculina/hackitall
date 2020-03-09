@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsComponent } from './products.component';
 
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { PaymentComponent } from './payment.component';
 
 @NgModule({
   imports: [
@@ -17,10 +15,8 @@ import {MatInputModule} from '@angular/material/input';
     MatGridListModule,
     MatIconModule,
     MatListModule,
-    RouterModule,
-    MatFormFieldModule,
-    MatInputModule
+    RouterModule
   ],
-  declarations: [ProductsComponent]
+  declarations: [PaymentComponent]
 })
 export class ProductsModule { }

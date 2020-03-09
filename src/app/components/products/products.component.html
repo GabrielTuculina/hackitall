@@ -1,10 +1,11 @@
-<mat-grid-list cols="3" rowHeight="500px">
-  <mat-grid-tile *ngFor="let prod of products" >
+<mat-grid-list cols="3" rowHeight="500px"  >
+  <mat-grid-tile  *ngFor="let prod of products">
 
     <!-- <mat-grid-tile-header>
     </mat-grid-tile-header> -->
 
-    <img mat-card-image src={{prod.path}} class="avira-image" (onclick)="router.navigate(['/payment']);">
+    
+    <img mat-card-image src={{prod.path}} class="avira-image"  routerLink="/payment" [queryParams]="{ price: prod.price}">
     <mat-list>
       <mat-list-item style="height: 150px;">
         <p>{{prod.description}}</p>
@@ -19,9 +20,15 @@
     
     <mat-grid-tile-footer>
         {{prod.quantity}} products
+        
       <!-- <mat-icon svgIcon="plus" aria-hidden="false"></mat-icon> -->
     </mat-grid-tile-footer>
 
   </mat-grid-tile>
-
 </mat-grid-list>
+<button (click)="checkAdmin()" mat-raised-button color="#0a7800">Cash</button>
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <input matInput required maxlength="4" type="password" placeholder="PIN">
+  </mat-form-field>
+</div>

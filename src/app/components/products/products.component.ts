@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -21,12 +22,12 @@ export class ProductsComponent implements OnInit {
     { title: "Avira System Speedup", description: "Maximizes performance with a faster PC\n\rAutomatically cleans junk & clutter.\r\nIncludes 40 premium optimization tools.", price: "106 lei", path: "../../../assets/avira-system-speedup-pro.png", quantity: 8}
   ]
 
-  constructor(private router: Router) { }
+  constructor(private route: ActivatedRoute,private router: RouterModule) { }
 
   ngOnInit() {
   }
-  goToPage(pageName:string){
-    this.router.navigate([`${pageName}`]);
+  checkAdmin(){
+    
   }
 
 }
