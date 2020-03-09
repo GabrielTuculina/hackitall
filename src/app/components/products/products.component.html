@@ -20,8 +20,6 @@
     
     <mat-grid-tile-footer>
         {{prod.quantity}} products
-        
-      <!-- <mat-icon svgIcon="plus" aria-hidden="false"></mat-icon> -->
     </mat-grid-tile-footer>
 
   </mat-grid-tile>
@@ -29,7 +27,7 @@
 <br/>
 <br/>
 <div class="example-button-row">
-  <button mat-raised-button (click)="showInput()">ADMINISTRARE</button>
+  <button mat-raised-button (click)="showInput()">ADMINISTRATION</button>
 </div>
 
 <div class="example-container">
@@ -37,8 +35,7 @@
     <input matInput required maxlength="4" type="password" placeholder="PIN"  formControl="pin" 
     (change)="checkAdmin()">
     <div class="example-button-row">
-      <button mat-raised-button (click)="onSubmit()">Verifica</button>
+      <button mat-raised-button (click)="onSubmit()">CHECK</button>
     </div>
   </mat-form-field>
-  <button *ngIf="this.isAdmin">Heei</button>
 </div>
